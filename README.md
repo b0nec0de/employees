@@ -1,1 +1,1 @@
-Minimal React Webpack Boilerplate
+A SPA for diplaying the list of employees, made with _React.js._
