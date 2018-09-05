@@ -1,14 +1,34 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 import './App.scss';
-import Hello from '../components/Hello';
+
+import Content from '../components/Content';
+import Menu from '../components/Menu';
+
+const employees = [
+	{
+		id: 1,
+		name: 'Иванов Иван Иванович',
+		position: 'директор'
+	},
+	{
+		id: 2,
+		name: 'Сидоров Сидор Сидорович',
+		position: 'менеджер'
+	}
+];
 
 class App extends Component {
+	state = {
+		employees
+	};
+
 	render() {
 		return (
 			<div>
 				<h1>My React App!</h1>
-				<Hello hello={'Hello World!'} />
+				<Content list={this.state.employees} />
+				<Menu />
 			</div>
 		);
 	}

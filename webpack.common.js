@@ -4,10 +4,6 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
 	entry: './src/index.js',
-	devServer: {
-		contentBase: './dist',
-		hot: true
-	},
 	module: {
 		rules: [
 			{
@@ -16,7 +12,7 @@ module.exports = {
 				use: [{ loader: 'babel-loader' }, { loader: 'eslint-loader' }]
 			},
 			{
-				test: /\.scss$/,
+				test: /\.s(a|c)ss$/,
 				use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
 			}
 		]
