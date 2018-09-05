@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Menu = props => {
-	return <div>{props.children}</div>;
+const Menu = ({ children }) => {
+	return <div className="menu">{children}</div>;
 };
 
 Menu.propTypes = {
