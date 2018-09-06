@@ -2,7 +2,7 @@ import React from 'react';
 
 const Button = () => {
 	return (
-		<button type="button" className="openclose">
+		<button type="button" className="button button-edit">
 			Edit List
 		</button>
 	);
