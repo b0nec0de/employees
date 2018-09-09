@@ -49,14 +49,24 @@
 	border: none;
 	border-radius: 5px;
 	width: 100px;
-	color: #fff;
-	background-color: mediumseagreen;
 	cursor: pointer;
 
-	&.button-edit {
+	&.button-edit,
+	&.button-close {
 		position: absolute;
 		top: 0px;
 		right: 80px;
+	}
+
+	&.button-edit {
+		color: mediumseagreen;
+		background-color: #fff;
+		border: 1px solid mediumseagreen;
+	}
+
+	&.button-close {
+		color: #fff;
+		background-color: mediumseagreen;
 	}
 
 	&.button-remove {

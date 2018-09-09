@@ -21,8 +21,7 @@ const employees = [
 class App extends Component {
 	state = {
 		employees,
-		isShown: false,
-		text: 'Edit Text'
+		isShown: false
 	};
 
 	handleShowMenu = () => {
@@ -38,7 +37,6 @@ class App extends Component {
 				<Content
 					list={this.state.employees}
 					toggleMenu={this.handleShowMenu}
-					text={this.state.text}
 					isShown={this.state.isShown}
 				/>
 				<Menu isShown={this.state.isShown} />

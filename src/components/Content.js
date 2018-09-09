@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-const Content = ({ list, toggleMenu, text, isShown }) => {
+const Content = ({ list, toggleMenu, isShown }) => {
 	return (
 		<div className="content">
 			<h1>Employee List</h1>
@@ -14,7 +14,11 @@ const Content = ({ list, toggleMenu, text, isShown }) => {
 					</li>
 				))}
 			</ul>
-			<Button toggleMenu={toggleMenu} text={text} isShown={isShown} />
+			<Button
+				toggleMenu={toggleMenu}
+				isShown={isShown}
+				className={isShown ? 'button-close' : 'button-edit'}
+			/>
 		</div>
 	);
 };
@@ -22,7 +26,6 @@ const Content = ({ list, toggleMenu, text, isShown }) => {
 Content.propTypes = {
 	list: PropTypes.array,
 	toggleMenu: PropTypes.func,
-	text: PropTypes.string,
 	isShown: PropTypes.bool
 };
 
