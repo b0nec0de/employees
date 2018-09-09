@@ -20,14 +20,28 @@ const employees = [
 
 class App extends Component {
 	state = {
-		employees
+		employees,
+		isShown: false,
+		text: 'Edit Text'
+	};
+
+	handleShowMenu = () => {
+		this.setState({
+			isShown: !this.state.isShown,
+			text: 'Close Menu'
+		});
 	};
 
 	render() {
 		return (
 			<div className="app">
-				<Content list={this.state.employees} />
-				<Menu />
+				<Content
+					list={this.state.employees}
+					toggleMenu={this.handleShowMenu}
+					text={this.state.text}
+					isShown={this.state.isShown}
+				/>
+				<Menu isShown={this.state.isShown} />
 			</div>
 		);
 	}

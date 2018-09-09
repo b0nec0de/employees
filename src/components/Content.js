@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-const Content = ({ list }) => {
+const Content = ({ list, toggleMenu, text, isShown }) => {
 	return (
 		<div className="content">
 			<h1>Employee List</h1>
@@ -14,13 +14,16 @@ const Content = ({ list }) => {
 					</li>
 				))}
 			</ul>
-			<Button />
+			<Button toggleMenu={toggleMenu} text={text} isShown={isShown} />
 		</div>
 	);
 };
 
 Content.propTypes = {
-	list: PropTypes.array
+	list: PropTypes.array,
+	toggleMenu: PropTypes.func,
+	text: PropTypes.string,
+	isShown: PropTypes.bool
 };
 
 export default Content;

@@ -28,7 +28,8 @@ module.exports = {
 			'warn',
 			{ vars: 'all', args: 'none', ignoreRestSiblings: false }
 		],
-		'prettier/prettier': 'error'
+		'prettier/prettier': 'error',
+		'no-console': 'off'
 	},
 	settings: {
 		react: {

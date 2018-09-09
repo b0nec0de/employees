@@ -13,7 +13,7 @@ const MenuList = ({ children }) => {
 };
 
 MenuList.propTypes = {
-	children: PropTypes.children
+	children: PropTypes.func
 };
 
 export default MenuList;
