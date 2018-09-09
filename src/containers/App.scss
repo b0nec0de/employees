@@ -55,18 +55,19 @@
 	&.button-close {
 		position: absolute;
 		top: 0px;
-		right: 80px;
 	}
 
 	&.button-edit {
-		color: mediumseagreen;
-		background-color: #fff;
-		border: 1px solid mediumseagreen;
+		color: #fff;
+		background-color: mediumseagreen;
+		right: -360px;
 	}
 
 	&.button-close {
-		color: #fff;
-		background-color: mediumseagreen;
+		color: mediumseagreen;
+		background-color: #fff;
+		border: 1px solid mediumseagreen;
+		right: 80px;
 	}
 
 	&.button-remove {

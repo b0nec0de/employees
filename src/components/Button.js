@@ -6,7 +6,7 @@ const Button = props => {
 	return (
 		<button
 			type="button"
-			className={`button + ${props.className}`}
+			className={`button ${props.className}`}
 			onClick={props.toggleMenu}
 		>
 			{button}

@@ -17,7 +17,7 @@ const Content = ({ list, toggleMenu, isShown }) => {
 			<Button
 				toggleMenu={toggleMenu}
 				isShown={isShown}
-				className={isShown ? 'button-edit' : 'button-close'}
+				className={!isShown ? 'button-edit' : 'button-close'}
 			/>
 		</div>
 	);
