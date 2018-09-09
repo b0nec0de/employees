@@ -17,11 +17,7 @@ const Content = ({ list, toggleMenu, isShown }) => {
 			<Button
 				toggleMenu={toggleMenu}
 				isShown={isShown}
-<<<<<<< HEAD
 				className={isShown ? 'button-edit' : 'button-close'}
-=======
-				className={isShown ? 'button-close' : 'button-edit'}
->>>>>>> 418d8376ad85e9bd988883d644547bed5669e4f0
 			/>
 		</div>
 	);
