@@ -2,18 +2,23 @@ import React from 'react';
 import MenuItem from './MenuItem';
 import PropTypes from 'prop-types';
 
-const MenuList = ({ children }) => {
+const MenuList = props => {
 	return (
-		<div className="menuList">
-			<MenuItem />
-			<MenuItem />
-			{children}
+		<div>
+			{props.list.map(item => (
+				<MenuItem
+					key={item.id}
+					id={item.id}
+					name={item.name}
+					position={item.position}
+				/>
+			))}
 		</div>
 	);
 };
 
 MenuList.propTypes = {
-	children: PropTypes.func
+	list: PropTypes.array
 };
 
 export default MenuList;

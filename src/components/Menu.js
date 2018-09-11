@@ -8,7 +8,7 @@ const Menu = props => {
 		<div>
 			{props.isShown && (
 				<div className="menu">
-					<MenuList />
+					<MenuList list={props.list} />
 					<button type="button" value="Add Item" className="button button-add">
 						Add Item
 					</button>
@@ -19,7 +19,8 @@ const Menu = props => {
 };
 
 Menu.propTypes = {
-	isShown: PropTypes.bool
+	isShown: PropTypes.bool,
+	list: PropTypes.array
 };
 
 export default Menu;

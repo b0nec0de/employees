@@ -39,7 +39,7 @@ class App extends Component {
 					toggleMenu={this.handleShowMenu}
 					isShown={this.state.isShown}
 				/>
-				<Menu isShown={this.state.isShown} />
+				<Menu isShown={this.state.isShown} list={this.state.employees} />
 			</div>
 		);
 	}
